@@ -1,0 +1,18 @@
+event:
+startDate - string (date string)
+startTime - string (time string)
+endDate - string (date string)
+endTime - string (time string)
+id - number (from db)
+seriesId - number (from db)
+for future use: userId
+
+series
+name - string
+description - string
+notes - string
+location - string
+tags - [strings]
+photo - string (file path)
+
+
