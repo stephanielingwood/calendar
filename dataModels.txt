@@ -1,8 +1,6 @@
 event:
-startDate - string (date string)
-startTime - string (time string)
-endDate - string (date string)
-endTime - string (time string)
+startDate - string (date/time string)
+endDate - string (date/time string)
 id - number (from db)
 seriesId - number (from db)
 for future use: userId
