@@ -1,28 +1,20 @@
 import uuid from 'uuid'
+// can handle assigning hard-coded values or defaults either in the action or the reducer
 
 // addEvent
-export const addEvent = (startDate, endDate, seriesId) => {
+export const addEvent = (name, startDate, endDate, description, notes, location, tags, photo, selected) => {
   return {
     type: 'ADD_EVENT',
     id: uuid.v4(),
+    name,
     startDate,
     endDate,
-    seriesId,
-    selected: false
-  }
-}
-
-// addSeries
-export const addSeries = (name, description, notes, location, tags, photo) => {
-  return {
-    type: 'ADD_SERIES',
-    id: uuid.v4(),
-    name,
     description,
     notes,
     location,
-    tags,
-    photo
+    tags: tags || [],
+    photo: photo || '',
+    selected: false
   }
 }
 
